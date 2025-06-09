@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Tue Jun 10 00:49:46 2025 as: nmap -sV -p1-1000 -iL targets.txt -oX nmap_20250610_004514.xml -->
+<nmaprun scanner="nmap" args="nmap -sV -p1-1000 -iL targets.txt -oX nmap_20250610_004514.xml" start="1749487786" startstr="Tue Jun 10 00:49:46 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services="1-1000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.1" addrtype="ipv4"/>
+<address addr="34:98:B5:AE:13:65" addrtype="mac" vendor="Netgear"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.5" addrtype="ipv4"/>
+<address addr="D2:FB:C2:9F:ED:FA" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1749487787" endtime="1749487801"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.1" addrtype="ipv4"/>
+<address addr="34:98:B5:AE:13:65" addrtype="mac" vendor="Netgear"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="997">
+<extrareasons reason="reset" count="997" proto="tcp" ports="1-20,22-79,81-442,444-1000"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="lighttpd" version="1.4.45" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.45</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="uhttpd" version="1.0.0" extrainfo="Netgear RAX10 WAP http config" devicetype="WAP" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/h:netgear:rax10</cpe></service></port>
+</ports>
+<times srtt="4900" rttvar="820" to="100000"/>
+</host>
+<host starttime="1749487787" endtime="1749487801"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.5" addrtype="ipv4"/>
+<address addr="D2:FB:C2:9F:ED:FA" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="999">
+<extrareasons reason="reset" count="999" proto="tcp" ports="1-87,89-1000"/>
+</extraports>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="kerberos-sec" product="Heimdal Kerberos" extrainfo="server time: 2025-06-09 16:49:54Z" method="probed" conf="10"><cpe>cpe:/a:heimdal:kerberos</cpe></service></port>
+</ports>
+<times srtt="5125" rttvar="2117" to="100000"/>
+</host>
+<runstats><finished time="1749487801" timestr="Tue Jun 10 00:50:01 2025" summary="Nmap done at Tue Jun 10 00:50:01 2025; 2 IP addresses (2 hosts up) scanned in 14.55 seconds" elapsed="14.55" exit="success"/><hosts up="2" down="0" total="2"/>
+</runstats>
+</nmaprun>
