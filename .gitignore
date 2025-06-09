@@ -1,0 +1,8 @@
+# Ignore all scan data
+*.xml
+*.db
+*.log
+
+# Bytecode
+__pycache__/
+*.pyc
