@@ -1,19 +1,22 @@
 # shodan-lite
-A system I built to scan networks, figure out what devices are live, what ports are open, what software they're running, and whether anything is outdated or risky.  It's basically like Shodan or Censys, but I run it myself, locally. No external dependencies. No rate limits. I control everything.
+
+I built this system to scan networks and identify which devices are live, what ports are open, and what software is running. It helps me spot outdated or risky systems quickly. Everything runs locally, no need for cloud services or third-party APIs once it’s set up.
 
 
-**Why I built it**
+**Why?**
 
-I wanted to be able to see exactly what’s running on a network either, mine or someone else's and automatically know if something’s dangerous or vulnerable. This system gives me the full picture:
+I just wanted a way to see exactly what’s running on a network, and know right away if something’s risky or outdated. No subscriptions, no token or credits or other BS.
 
-What devices are online?
-What ports are open?
-What services and versions are running?
-Where the IP is located?(country, city, ISP)
-If it’s running vulnerable software?
-Whether it should trigger an alert?
 
-This matters because most people don’t even know what’s exposed until it’s too late. This tells me before something goes wrong.
+**This system gives me the full picture:**
+
+1. What devices are online?
+2. What ports are open?
+3. What services and versions are running?
+4. Where the IP is located?(country, city, ISP)
+5. If it’s running vulnerable software?
+6. Whether it should trigger an alert?
+
 
 **What it does step-by-step**
 
